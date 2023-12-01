@@ -36,3 +36,257 @@ ul,
 ol {
   list-style: none;
 }
+
+/* начало моего кода */
+
+.page {
+  display: flex;
+  margin: auto;
+  color: #FFF;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  /* inline-size: 1200px; */
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* начало content и result */
+
+.content {
+  display: flex;
+  align-items: end;
+  margin: auto;
+  width: 1140px;
+}
+
+.content__list {
+  height: 298px;
+  overflow: auto;
+  position: relative;
+  padding-block:3px ;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  /* gap: 30px; */
+  /* flex-direction: column; */
+
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  margin-block-end: 16px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.result {
+  padding-inline-end: 30px;
+}
+
+.title {
+  /* max-width: 260px; */
+  /* max-height: 210px; */
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-block-end: 26px;
+}
+
+.content__accent {
+  color:  #545050;;
+}
+
+/* search form */
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  /* height: 56px; */
+}
+
+.search-form__fieldset-title,
+.search-form__label-text
+{
+  color: #FFF;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.search-form__fieldset-title {
+  margin-block-end: 5px;
+}
+.search-form__textfield {
+  min-width: 225px;
+  color: #FFF;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  border-left: 0;
+  border-right: 0;
+  padding-inline: 2.5px 14px 2.5px 0 ;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  background: transparent;
+  appearance: none;
+}
+
+.search-form__fieldset {
+  border: none;
+  cursor: pointer;
+}
+
+.search-form__label {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__label:not(:last-child) {
+  /* margin-inline-end: 15px; */
+}
+
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label-text {
+color: #FFF;
+font-weight: 400;
+font-size: 18px;
+line-height: normal;
+}
+
+/* рисую новые флажки */
+
+.search-form__pseudo-checkbox {
+display: inline-block;
+width: 19px;
+height: 19px;
+margin-inline-end: 5px;
+vertical-align: middle;
+background-color: transparent;
+border: 1px solid #FFF;
+}
+
+.search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox {
+width: 15px;
+height: 15px;
+/* background-color: #FFF; */
+border: 1px solid #FFF;
+}
+
+/* template */
+
+
+.cards-list-item-template {
+  display: flex;
+}
+
+.content__list-item:not(:last-child) {
+ margin-block-end: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  margin-block-end: 6px;
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 30px */
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #FFF;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px; /* 90% */
+}
+
+/* button */
+
+.button {
+  cursor: pointer;
+  width: 194px;
+  height: 34px;
+  background: transparent;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+}
+
+.search-form__submit-button {
+align-self: end;
+}
+
+.more-button {
+  display: flex;
+  /* width: 399px; */
+  /* height: 34px; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  flex-shrink: 0;
+}
+
+/* небольшие рвсхождения с макетом где город и время суток
+начать с шага 6 */
