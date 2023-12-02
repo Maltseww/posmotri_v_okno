@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -107,7 +108,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  margin-inline-end: 5px;
+  margin-block-end: 5px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
